@@ -1,0 +1,39 @@
+{
+
+	"type": "post",
+
+	"textContent": "<h2>Blog post #6</h2> <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p> <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>",
+
+	"related": [
+		{ "url": "#/blog/1", "image": "assets/img/blog/1.jpg", "title": "Alt attribute" },
+		{ "url": "#/blog/2", "image": "assets/img/blog/2.jpg", "title": "Alt attribute" },
+		{ "url": "#/blog/3", "image": "assets/img/blog/3.jpg", "title": "Alt attribute" },
+		{ "url": "#/blog/4", "image": "assets/img/blog/4.jpg", "title": "Alt attribute" },
+		{ "url": "#/blog/5", "image": "assets/img/blog/5.jpg", "title": "Alt attribute" }
+	],
+
+	"info": [
+		{ "url": "#", "icon": "user", "text": "premium layers" },
+		{ "url": "#", "icon": "heart", "text": "138 Likes" },
+		{ "url": "#", "icon": "calendar", "text": "25 December, 2013" },
+		{ "url": "#", "icon": "comment", "text": "4 Comments" }
+	],
+
+	"tags": [
+		"web design",
+		"photography",
+		"develompent",
+		"php",
+		"ecommere",
+		"graphic"
+	],
+
+	"archives": [
+		"December 2013 (24)",
+		"November 2013 (7)",
+		"September 2013 (2)",
+		"March 2013 (22)",
+		"January 2013 (11)"
+	]
+
+}

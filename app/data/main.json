@@ -1,0 +1,17 @@
+{
+
+	"logo": "assets/img/logo.png",
+
+	"social": [
+		{ "href": "#", "icon": "dribbble" },
+		{ "href": "#", "icon": "facebook" },
+		{ "href": "#", "icon": "google-plus" },
+		{ "href": "#", "icon": "linkedin" },
+		{ "href": "#", "icon": "pinterest" },
+		{ "href": "#", "icon": "skype" },
+		{ "href": "#", "icon": "twitter" }
+	],
+
+	"copyright": "© 2014 Kappe, All Rights Reserved"
+
+}

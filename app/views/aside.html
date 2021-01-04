@@ -1,0 +1,60 @@
+
+
+<aside class="main-sidebar">
+	<div class="sidebar-inner">
+
+		<header class="logo">
+
+			<a href="#/portfolio">
+				<img ng-src="{{ data.logo }}" alt="">
+			</a>
+
+			<button class="toggle-nav"><span></span></button>
+
+		</header>
+
+		<nav class="main-nav">
+			<a href="#/portfolio" ng-class="{ active: page == 'portfolio' }">
+				<span>Home</span>
+			</a>
+			<a href="#/about" ng-class="{ active: page == 'about' }">
+				<span>About</span>
+			</a>
+			<a href="#/blog" ng-class="{ active: page == 'blog' }">
+				<span>Blog</span>
+			</a>
+			<a href="#/contact" ng-class="{ active: page == 'contact' }">
+				<span>Contact</span>
+			</a>
+		</nav>
+
+		<footer class="sidebar-footer">
+
+			<div class="filter" ng-if="page == 'portfolio'">
+
+				<h3>Filter <i class="fa fa-th-large"></i></h3>
+
+				<ul>
+
+					<li ng-click="chooseTag()">All Works </li>
+
+					<li ng-repeat="tag in tags" ng-click="chooseTag(tag)">{{ tag }}</li>
+
+				</ul>
+
+			</div>
+
+			<div class="social" ng-if="data.social">
+
+				<a ng-href="{{ elem.href }}" class="{{ elem.icon }}" target="_blank" ng-repeat="elem in data.social">
+					<i class="fa fa-{{ elem.icon }}"></i>
+				</a>
+
+			</div>
+
+			<p class="copyright">{{ data.copyright }}</p>
+
+		</footer>
+
+	</div>
+</aside>

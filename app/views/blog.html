@@ -1,0 +1,66 @@
+
+
+<section class="blog">
+	<div class="row-fluid isotope-grid">
+
+		<div class="col xs-12 md-6 lg-4 blog-post" ng-repeat="post in data.posts">
+
+			<div class="preview has-overlay"
+				ng-class="{ 'has-overlay': post.isOverlay }"
+				ng-if="post.previewImg !== 'undefined'"
+				>
+
+				<a ng-href="#/blog/{{ post.id }}">
+					<img ng-src="{{ post.previewImg }}" class="responsive" alt="">
+				</a>
+
+				<div class="overlay" ng-if="post.isOverlay">
+					<div class="icon">
+						<a ng-href="#/blog/{{ post.id }}"><i class="fa fa-arrow-right"></i></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="text-content" ng-if="post.textContent.length > 0 || post.title.length > 0">
+
+				<h2 ng-if="post.title.length > 0">
+					<a href="#/blog/{{ post.id }}">{{ post.title }}</a>
+				</h2>
+
+				<div ng-bind-html="post.textContent | html"></div>
+
+			</div>
+
+			<div class="post-info" ng-if="post.metaInfo.length > 0">
+
+				<a ng-href="{{ item.url }}" ng-repeat="item in post.metaInfo">
+					<i class="fa fa-{{ item.icon }}"></i>
+					<span>{{ item.text }}</span>
+				</a>
+
+			</div>
+
+			<div class="meta-link" ng-if="post.metaLink.text.length || post.metaLink.url.length">
+				{{ post.metaLink.text | html }}
+				<p><a ng-href="{{ post.metaLink.url }}">{{ post.metaLink.url }}</a></p>
+			</div>
+
+			<div class="meta-aside" ng-if="post.metaAside.length > 0" ng-bind-html="post.metaAside | html"></div>
+
+			<div class="post-quote" ng-if="post.quote.text">
+
+				<blockquote>{{ post.quote.text }}</blockquote>
+
+				<p class="quote-symbol">
+					<i class="fa fa-quote-left"></i>
+				</p>
+
+				<p class="quote-author">{{ post.quote.author }}</p>
+
+			</div>
+
+		</div>
+
+	</div>
+</section>

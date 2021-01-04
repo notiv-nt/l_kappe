@@ -1,0 +1,134 @@
+
+
+.main-sidebar
+	position fixed
+	left 0
+	top 0
+	width $sidebar-width
+	height 100%
+	overflow hidden
+	background-color #242b2e
+	z-index 3
+
+	.sidebar-inner
+		overflow-y scroll
+		height 100%
+		padding-right 10px
+		margin-right -30px
+
+	.logo
+		background-color #fff
+		text-align center
+		padding 30px 5px
+
+		a
+			display inline-block
+
+
+	.filter
+		border-bottom 1px solid #1e282b
+		margin-bottom 10px
+
+		h3, ul
+			margin-bottom 10px
+
+		h3
+			color $main-color
+			font-size 1rem
+			font-weight 100
+
+			i
+				margin-left 10px
+
+		ul
+			list-style none
+
+			li
+				color #6b7072
+				_transition color
+				padding 2px 0
+				display block
+				font-size _em(16px)
+				cursor pointer
+
+				&.active, &:hover
+					color #fff
+
+	.social
+		_social(24px)
+
+		a
+			_transition background
+
+			&.facebook    { background: #3e5ea2; }
+			&.twitter     { background: #2eb0e3; }
+			&.github      { background: #ffffff; }
+			&.tumblr      { background: #2c4762; }
+			&.pinterest   { background: #f43a2c; }
+			&.google-plus { background: #da5f2e; }
+			&.bitbucket   { background: #205081; }
+			&.skype       { background: #00aff0; }
+			&.dribbble    { background: #ea4c89; }
+			&.instagram   { background: #517FA4; }
+			&.flickr      { background: #ff0084; }
+			&.youtube     { background: #df2826; }
+			&.linkedin    { background: #107cb7; }
+
+		a:hover
+			&.facebook    { background: darken(#3e5ea2, 15%); }
+			&.twitter     { background: darken(#2eb0e3, 15%); }
+			&.github      { background: darken(#ffffff, 15%); }
+			&.tumblr      { background: darken(#2c4762, 15%); }
+			&.pinterest   { background: darken(#f43a2c, 15%); }
+			&.google-plus { background: darken(#da5f2e, 15%); }
+			&.bitbucket   { background: darken(#205081, 15%); }
+			&.skype       { background: darken(#00aff0, 15%); }
+			&.dribbble    { background: darken(#ea4c89, 15%); }
+			&.instagram   { background: darken(#517FA4, 15%); }
+			&.flickr      { background: darken(#ff0084, 15%); }
+			&.youtube     { background: darken(#df2826, 15%); }
+			&.linkedin    { background: darken(#107cb7, 15%); }
+
+
+
+.sidebar-footer
+	text-align right
+	padding 24px 34px 24px 24px
+	color #6b7072
+
+	.copyright
+		font-size _em(16px)
+
+
+.main-nav
+	text-align right
+
+	a
+		display block
+		background-color #2f373b
+		padding 15px 34px 15px 24px
+		color #fff
+		text-transform uppercase
+		background-image linear-gradient(to bottom, #333b3f 0%, #2e363a 100%)
+		position relative
+		overflow hidden
+		line-height 1.2
+
+		span
+			z-index 2
+			position relative
+
+		&:hover, &.active
+			&:before
+				right 0
+
+		&:before
+			content ''
+			background-color $main-color
+			position absolute
+			left 0
+			right 100%
+			top 0
+			height 100%
+
+			_transition right

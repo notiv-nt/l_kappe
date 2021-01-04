@@ -1,0 +1,104 @@
+{
+
+	"posts": [
+
+		{
+
+			"id": "1",
+			"title": "Blog post #1",
+			"textContent": "<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>",
+			"previewImg": "assets/img/blog/1.jpg",
+			"isOverlay": false,
+			"metaInfo": [
+				{ "icon": "comment", "url": "#", "text": "3 comments" },
+				{ "icon": "calendar", "url": "#", "text": "Dec 19, 2013" }
+			]
+
+		},
+
+		{
+			"metaLink": {
+				"text": "Another Post where you can put a link to a specific website",
+				"url": "http://www.themeforest.net"
+			}
+		},
+
+		{
+			"metaAside": "<h2>Aside Post Format</h2><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</p>"
+		},
+
+		{
+			"quote": {
+				"text": "Logic will get you from A to B. Imagination will take you everywhere.",
+				"author": "Albert Einstein"
+			}
+		},
+
+		{
+
+			"id": "2",
+			"title": "Blog post #2",
+			"textContent": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo ducimus veniam nemo minima aliquid exercitationem, consequuntur nisi adipisci, atque non minus maiores odio. Alias unde nisi minus, nam provident.</p>",
+			"previewImg": "assets/img/blog/2.jpg",
+			"isOverlay": false,
+			"metaInfo": [
+				{ "icon": "comment", "url": "#", "text": "3 comments" },
+				{ "icon": "calendar", "url": "#", "text": "Dec 19, 2013" }
+			]
+
+		},
+
+		{
+
+			"id": "3",
+			"title": "Blog post #3",
+			"textContent": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo ducimus veniam nemo minima aliquid exercitationem, consequuntur nisi adipisci, atque non minus maiores odio. Alias unde nisi minus, nam provident.</p>",
+			"previewImg": "assets/img/blog/3.jpg",
+			"isOverlay": false,
+			"metaInfo": [
+				{ "icon": "comment", "url": "#", "text": "3 comments" },
+				{ "icon": "calendar", "url": "#", "text": "Dec 19, 2013" }
+			]
+
+		},
+
+		{
+
+			"id": "4",
+			"title": "Blog post #4",
+			"textContent": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo ducimus veniam nemo minima aliquid exercitationem, consequuntur nisi adipisci, atque non minus maiores odio. Alias unde nisi minus, nam provident.</p>",
+			"previewImg": "assets/img/blog/4.jpg",
+			"isOverlay": false,
+			"metaInfo": [
+				{ "icon": "comment", "url": "#", "text": "3 comments" },
+				{ "icon": "calendar", "url": "#", "text": "Dec 19, 2013" }
+			]
+
+		},
+
+		{
+			"id": "5",
+			"title": "Blog post #5",
+			"textContent": "<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>"
+		},
+
+		{
+			"metaAside": "<h2>Aside Post Format</h2><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</p>"
+		},
+
+		{
+			"metaLink": {
+				"text": "Another Post where you can put a link to a specific website",
+				"url": "http://www.themeforest.net"
+			}
+		},
+
+		{
+			"id": "6",
+			"title": "Blog post #6",
+			"textContent": "<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>"
+		}
+
+	]
+
+}

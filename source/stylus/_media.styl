@@ -1,0 +1,152 @@
+
+
+// @media only screen and (min-width: 0)
+
+
+
+@media only screen and (max-width: 767px)
+
+
+	html
+		font-size 14px
+
+
+	.main-sidebar
+		position relative
+		width 100%
+		overflow auto
+		height auto
+
+		.social
+			padding 0
+
+		.copyright
+			display none
+
+		.sidebar-inner
+			overflow auto
+			height auto
+			padding-right 0
+			margin-right 0
+
+		.logo
+			text-align left
+			padding 15px 10px
+
+			img
+				max-height 35px
+
+		.filter
+			&, h3, ul
+				margin-bottom 5px
+
+			ul
+
+				li
+					padding 4px
+					display inline-block
+					font-size _em(18px)
+
+
+	.main-nav
+		text-align center
+		max-height 0
+		overflow hidden
+		_transition max-height
+
+		&.active
+			max-height 1000px
+
+		a
+			padding 10px 5px
+
+			&:before
+				_transition none
+
+
+	.sidebar-footer
+		padding 15px 5px
+		text-align center
+
+
+	.main
+		padding-left 0
+
+
+	.main-box
+		padding 10px
+
+	.mainbox-wrap
+		padding 15px 0
+
+		.mainbox-part
+			padding 0 15px
+
+	.contact .contact-box
+		padding 15px
+
+
+	.toggle-nav
+		display block
+
+	.testimonials blockquote
+		padding 15px
+
+	.blog-post
+		padding 5px
+
+
+	.comment
+		$size = 70px
+
+		& > &
+			padding-left $size
+
+		&-picture
+			margin-right ($size - 20%) * -1
+			width ($size - 20%)
+
+			a, img
+				max-height $size - 20%
+
+		&-content
+			margin-left $size
+
+	.testimonials
+		.author-photo
+			width 50px
+			height @width
+
+
+@media only screen and (min-width: 768px) {}
+
+
+
+@media only screen and (max-width: 991px)
+
+	html
+		font-size 16px
+
+
+@media only screen and (min-width: 992px) {}
+
+
+
+@media only screen and (max-width: 1199px)
+
+	.mainbox-wrap
+
+		.mainbox-part
+
+			&:first-of-type
+				border-right none
+
+			&:last-of-type
+				border-left none
+				margin-left 0
+
+
+@media only screen and (min-width: 1200px) {}
+
+
+

@@ -1,0 +1,69 @@
+{
+
+	"type": "work",
+
+	"images": [
+		{ "url": "assets/img/portfolio/pic-01.jpg", "alt": "Alt content" },
+		{ "url": "assets/img/portfolio/pic-01.jpg", "alt": "Alt content" },
+		{ "url": "assets/img/portfolio/pic-01.jpg", "alt": "Alt content" }
+	],
+
+	"textContent": "<h2>Heavy Sand - Creative Photography</h2><p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p> <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>",
+
+	"related": [
+		{ "url": "#/portfolio/1", "image": "assets/img/portfolio/pic-01.jpg", "title": "Aviator Wings bcard" },
+		{ "url": "#/portfolio/2", "image": "assets/img/portfolio/pic-02.jpg", "title": "Finell T-shirt Design" },
+		{ "url": "#/portfolio/3", "image": "assets/img/portfolio/pic-03.jpg", "title": "Advanced Translation Logo" },
+		{ "url": "#/portfolio/4", "image": "assets/img/portfolio/pic-04.jpg", "title": "Cool App Design" }
+	],
+
+	"comments": [
+
+		{
+			"id": "1",
+			"author": { "photo": "assets/img/testimonials/pic-01.jpg", "url": "#", "name": "Snahe Freer" },
+			"text": "great post brainartworks",
+			"time": "58 minutes ago"
+		},
+		{
+			"id": "2",
+			"author": { "photo": "assets/img/testimonials/pic-01.jpg", "url": "#", "name": "Collis Ta’eed" },
+			"text": "yeah i  really like it too, very useful!",
+			"time": "58 minutes ago"
+		}
+
+	],
+
+	"info": [
+		{ "url": "#", "icon": "user", "text": "premium layers" },
+		{ "url": "#", "icon": "heart", "text": "138 Likes" },
+		{ "url": "#", "icon": "calendar", "text": "25 December, 2013" },
+		{ "url": "#", "icon": "comment", "text": "4 Comments" }
+	],
+
+	"tags": [
+		"web design",
+		"photography",
+		"develompent",
+		"php",
+		"ecommere",
+		"graphic"
+	],
+
+	"features": [
+		"Responsive Layout",
+		"Font Awesome Icons",
+		"Clean &amp; Commented Code",
+		"Pixel perfect Design",
+		"Highly Customizable"
+	],
+
+	"archives": [
+		"December 2013 (24)",
+		"November 2013 (7)",
+		"September 2013 (2)",
+		"March 2013 (22)",
+		"January 2013 (11)"
+	]
+
+}

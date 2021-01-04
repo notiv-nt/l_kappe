@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ title }}</title>
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.14/es5-shim.min.js"></script>
+	<![endif]-->
+
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Roboto:700,700italic,400,300,300italic,100&amp;subset=latin,cyrillic">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body ng-controller="MainCtrl" ng-cloak>
+
+  <app-aside></app-aside>
+
+  <main class="main">
+
+    <ng-view></ng-view>
+
+  </main>
+
+  <script src='assets/js/main.js'></script>
+
+</body>
+</html>

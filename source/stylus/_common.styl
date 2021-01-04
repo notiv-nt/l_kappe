@@ -1,0 +1,397 @@
+
+
+.main
+	width auto
+	height 100%
+	min-height 100%
+	position relative
+	padding-left $sidebar-width
+
+
+h2
+	font-size _em(24px)
+	line-height 1.1
+	font-weight 300
+	color #000
+	margin 0 0 10px
+
+
+p
+	margin 0 0 10px
+
+
+hr
+	margin-top 20px
+	margin-bottom 20px
+	border 0
+	border-top 1px solid #e5e5e5
+
+
+.btn
+	border none
+	outline none
+
+	display inline-block
+	text-align center
+	font-weight 300
+	font-size _em(14px)
+	text-transform uppercase
+	background $main-color
+	color #fff
+	_transition background
+
+	padding 10px 25px
+
+	&:hover
+		background darken($main-color, 10%)
+
+
+.main-box
+	min-height 100%
+	padding 25px
+
+
+.has-overlay
+	position relative
+
+	a&
+		display block
+
+	&:hover
+		.overlay
+			opacity 1
+
+	.overlay
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		display flex
+		align-items center
+		justify-content center
+		flex-direction column
+		background-color rgba($main-color, .9)
+		color #fff
+		text-align center
+		z-index 2
+
+		opacity 0
+		_transition opacity
+
+		p
+			font-size _em(14px)
+			line-height 1.3
+
+		.lead, .title
+			margin-bottom 5px
+
+		.lead
+			font-size _em(24px)
+
+		.title
+			font-size _em(18px)
+
+		.tags
+			padding-bottom 14px
+			border-bottom 1px solid #fff
+			display inline-block
+
+		.icon
+			padding-top 18px
+
+			a
+				display inline-block
+				width 60px
+				height @width
+				text-align center
+				line-height @width - 5%
+				border 1px solid #fff
+				border-radius 50%
+				font-size 1.1em
+				_transition font-size, background-color, color
+
+				&:hover
+					font-size 1.4em
+					background-color #fff
+					color $main-color
+
+
+.mainbox-wrap
+	padding 30px 0
+	background-color #fff
+
+	.mainbox-part
+		padding 0 30px
+
+		h2
+			margin-top 20px
+
+			&:first-of-type
+				margin-top 0
+
+		&:first-of-type
+			border-right 1px solid #e5e5e5
+
+		&:last-of-type
+			border-left 1px solid #e5e5e5
+			margin-left -1px
+
+
+.custom-form
+	margin 0 -5px
+	margin-bottom -10px
+
+	.form-block
+		padding 0 5px
+
+	.field
+		margin-bottom 10px
+		border 1px solid #eaeaea
+
+		&.no-border
+			border none
+
+		&-icon
+			position relative
+			padding-left 57px
+
+			span
+				position absolute
+				top 0
+				left 0
+				padding 13px // magic
+				border-right 1px solid #eaeaea
+
+		input[type="text"],
+		input[type="email"],
+		textarea
+			display block
+			width 100%
+			border none
+			outline none
+			height auto
+			max-width 100%
+			padding 18px
+			font inherit
+			font-size 14px
+
+			&:focus + span i
+				color #fff
+				background-color $main-color
+
+		button[type="submit"],
+		input[type="submit"]
+			@extend .btn
+
+			padding 19px 10px
+			display block
+			width 100%
+
+		textarea
+			min-height 128px
+			resize vertical
+			max-width 100%
+
+
+.skills
+
+	&-item
+		padding 7px 0
+
+		p
+			color #727272
+			font-size _em(15px)
+			margin-bottom 5px
+
+			span.percent
+				float right
+				color #000
+				font-size _em(14px)
+				line-height 2
+
+	.progress
+		$color = #ececec
+
+		border 1px solid $color
+		background #fff
+		display block
+		width 100%
+
+		&-bar
+			height 30px
+			background $color
+			transition width
+
+
+.testimonials
+
+	.author
+		display table
+		width 100%
+		background-color $main-color
+		color #fff
+		font-size _em(15px)
+		font-style italic
+
+		&-photo, &-name
+			display table-cell
+			vertical-align middle
+
+		&-photo
+			width 80px
+			height 80px
+			margin-right 20px
+
+			img
+				display block
+				max-width 80px
+				max-height @max-width
+
+	blockquote
+		margin 0
+		padding 30px
+		font inherit
+		font-size 1rem
+		border 1px solid #ececec
+		border-top none
+
+
+.tags
+	list-style none
+	margin -5px
+	padding 0
+
+	li
+		display inline-block
+		margin 5px
+
+	a
+		display block
+		border 1px solid #dbdbdb
+		background-color #fff
+		padding 7px 13px
+		font-size _em(15px)
+		border-radius 10px
+		_transition border-color
+
+		&:hover
+			text-decoration none
+			border-color $main-color
+
+
+ul.info-list
+	list-style none
+	margin 0
+	padding 0
+
+	li
+		display block
+		padding 12px 2px
+		border-bottom 1px solid #e5e5e5
+
+	.theme-icon
+		vertical-align middle
+		margin-right 14px
+
+
+ul.list-check
+	color #848484
+
+	li
+		margin-bottom 2px
+
+		&:last-of-type
+			margin-bottom 0
+
+
+i.theme-icon
+	display inline-block
+	width 32px
+	height @width
+	border-radius 50%
+	line-height round(@width - 5%)
+	border 1px solid $main-color
+	text-align center
+	background-color #fff
+	color $main-color
+	font-size 14px
+	_transition color, background-color
+
+
+.padded-grid
+	margin -6px
+
+	.col
+		padding 6px
+
+
+.block-preview
+	margin-bottom 20px
+
+
+.comment
+	padding 15px 0
+
+	$size = 100px
+
+	& > &
+		padding-left $size
+		position relative
+
+		&:before
+			content ''
+			display block
+			width 40px
+			height @width
+			position absolute
+			left @width
+			border-left 1px solid #ddd
+			border-bottom 1px solid #ddd
+
+	&-wrap
+		@extend .clearfix
+
+	&-picture
+		float left
+		margin-right ($size - 20%) * -1
+		width ($size - 20%)
+
+		a, img
+			display block
+			max-width 100%
+			max-height $size - 20%
+
+	&-content
+		float left
+		margin-left $size
+
+	&-meta
+		color #d1d1d1
+		font-size _em(14px)
+		margin-bottom 5px
+
+		p
+			border-bottom 1px solid #e5e5e5
+			padding-bottom 5px
+			margin 0 0 0 0
+
+		a
+			color #3c3c3c
+
+			&:hover
+				text-decoration underline
+
+
+.widget
+	margin-bottom 20px
+
+	&-content
+
+		img
+			@extend .responsive
+			@extend .block-preview
+
+
+.toggle-nav
+	_toggle(#fff, $main-color, $main-color)

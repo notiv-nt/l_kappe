@@ -1,0 +1,21 @@
+
+<section class="portfolio row-fluid">
+
+	<div class="col xs-12 sm-6 md-4 lg-3 item has-overlay fade"
+			ng-repeat="work in data.works | filterWorks: filterQuery"
+			ng-animate="{ enter: 'animate-enter', leave: 'animate-leave' }">
+
+		<img ng-src="{{ work.image }}" class="responsive" alt="">
+
+		<div class="overlay">
+			<p class="lead">{{ work.title }}</p>
+			<p class="tags">{{ work.tags | join }}</p>
+
+			<div class="icon">
+				<a ng-href="#/portfolio/{{ work.id }}"><i class="fa fa-arrow-right"></i></a>
+			</div>
+		</div>
+
+	</div>
+
+</section>

@@ -1,0 +1,93 @@
+
+
+_em(fs)
+	return round( unit( fs / $main-font-size , em ), 2 )
+
+
+_transition(props...)
+	$str = ''
+
+	for prop in props
+		if prop == props[len(props)-1]
+			$str += prop + ' ' + $transition-prop + ' '
+		else
+			$str += prop + ' ' + $transition-prop + ', '
+
+	transition unquote($str)
+
+
+_social(size)
+	padding 15px 0
+
+	a
+		display inline-block
+		width size
+		height size
+		text-align center
+		margin 2px 3px
+		color #fff
+		font-size 15px
+		line-height size
+		border-radius 3px
+
+
+_divider($color, $offset = 35px, $width = 64px, $centered = false)
+
+	&:after
+		content ''
+		display block
+		width $width
+		height 2px
+		background-color $color
+		if $centered
+			margin $offset auto
+		else
+			margin $offset 0
+
+
+_toggle($color = #000, $bg-color = #fff, $border = 1px solid black, $thickness = 2px)
+
+	$size = 35px
+
+	background-color $bg-color
+	border $border
+	outline none
+
+	float right
+	width $size
+	height $size
+	margin 0
+	display none
+	border-radius 4px
+
+	span
+		position relative
+		display block
+
+		&:after,
+		&:before
+			content ""
+			position absolute
+			left 0
+			top ( $size / 5 ) * -1
+
+		&:after
+			top ( $size / 5 )
+
+	span, span:after, span:before
+		width 100%
+		height $thickness
+		background-color $color
+		transition all 0.3s
+		backface-visibility hidden
+		border-radius 2px
+
+	/* on activation */
+	&.active span
+		background-color transparent
+
+	&.active span:before
+		transform rotate(45deg) translate($size / 7,  $size / 7)
+
+	&.active span:after
+		transform rotate(-45deg) translate($size / 7, $size / -7)

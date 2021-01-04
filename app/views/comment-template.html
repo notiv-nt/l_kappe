@@ -1,0 +1,26 @@
+
+<div class="comment">
+
+	<div class="comment-wrap">
+
+		<div class="comment-picture">
+
+			<a ng-href="{{ comment.author.url }}">
+				<img ng-src="{{ comment.author.photo }}" alt="">
+			</a>
+
+		</div>
+
+		<div class="comment-content">
+
+			<div class="comment-meta">
+				<p><a ng-href="{{ comment.author.url }}">{{ comment.author.name }}</a> / <span>{{ comment.time }}</span></p>
+			</div>
+
+			<p>{{ comment.text }}</p>
+
+		</div>
+
+	</div>
+
+</div>

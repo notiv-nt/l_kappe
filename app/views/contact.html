@@ -1,0 +1,48 @@
+
+
+<section class="contact main-box">
+	<div class="contact-box">
+
+		<div ng-bind-html="data.textContent | html"></div>
+
+		<hr>
+
+		<h2>Send us a message</h2>
+
+		<form action="#" class="row-fluid custom-form" method="POST">
+
+			<div class="col xs-12 md-6 form-block">
+
+				<div class="field field-icon">
+					<input type="text" name="name" placeholder="Name">
+					<span><i class="fa fa-user theme-icon"></i></span>
+				</div>
+
+				<div class="field field-icon">
+					<input type="email" name="email" placeholder="E-mail">
+					<span><i class="fa fa-envelope-o theme-icon"></i></span>
+				</div>
+
+				<div class="field field-icon">
+					<input type="text" name="website" placeholder="website">
+					<span><i class="fa fa-link theme-icon"></i></span>
+				</div>
+
+			</div>
+
+			<div class="col xs-12 md-6 form-block">
+
+				<div class="field">
+					<textarea name="message" rows="4" placeholder="Message"></textarea>
+				</div>
+
+				<div class="field no-border">
+					<button type="submit">Send Now!</button>
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+</section>

@@ -1,0 +1,77 @@
+{
+
+	"works": [
+
+		{
+			"id": "1",
+			"image": "assets/img/portfolio/pic-01.jpg",
+			"title": "Aviator Wings bcard",
+			"tags": [ "Business", "Development", "Web design" ]
+		},
+
+		{
+			"id": "2",
+			"image": "assets/img/portfolio/pic-02.jpg",
+			"title": "Finell T-shirt Design",
+			"tags": [ "Mobile", "Web design" ]
+		},
+
+		{
+			"id": "3",
+			"image": "assets/img/portfolio/pic-03.jpg",
+			"title": "Advanced Translation Logo",
+			"tags": [ "Development", "Photography", "Web design" ]
+		},
+
+		{
+			"id": "4",
+			"image": "assets/img/portfolio/pic-04.jpg",
+			"title": "Cool App Design",
+			"tags": [ "Development", "Business" ]
+		},
+
+		{
+			"id": "5",
+			"image": "assets/img/portfolio/pic-05.jpg",
+			"title": "34 St Business Card",
+			"tags": [ "Development", "Business", "Web design" ]
+		},
+
+		{
+			"id": "6",
+			"image": "assets/img/portfolio/pic-06.jpg",
+			"title": "Rocket Logo",
+			"tags": [ "Development", "Photography" ]
+		},
+
+		{
+			"id": "7",
+			"image": "assets/img/portfolio/pic-07.jpg",
+			"title": "Cool App Design 2",
+			"tags": [ "Development", "Mobile" ]
+		},
+
+		{
+			"id": "8",
+			"image": "assets/img/portfolio/pic-08.jpg",
+			"title": "Cool App Design 1",
+			"tags": [ "Development", "Mobile", "Photography" ]
+		},
+
+		{
+			"id": "9",
+			"image": "assets/img/portfolio/pic-09.jpg",
+			"title": "Cool App Design 3",
+			"tags": [ "Development", "Mobile" ]
+		},
+
+		{
+			"id": "10",
+			"image": "assets/img/portfolio/pic-10.jpg",
+			"title": "Cool App Design 6",
+			"tags": [ "Photography" ]
+		}
+
+	]
+
+}
